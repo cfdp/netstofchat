@@ -21,7 +21,7 @@ nconf.defaults({
   },
   "http": {
     "hostname": "localhost",
-    "port": 3000
+    "port": 3003
   },
   "https": {
     "enabled": false,
@@ -31,7 +31,8 @@ nconf.defaults({
   },
   "features": {
     "hidePairRoomsOnRoomList": false,
-    "queueSystem" : true
+    "automaticPausePairRooms": true,
+    "queueSystem" : false
   }
 });
 

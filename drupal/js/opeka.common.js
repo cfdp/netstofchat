@@ -101,7 +101,7 @@ var Opeka = { status: {}},
         Opeka.appViewInstance.replaceContent(view.render().el);
       //}
     },
-
+    
     // The actual chatroom page.
     room: function (roomId) {
       var admin = _.isFunction(now.isAdmin),
@@ -537,10 +537,10 @@ var Opeka = { status: {}},
 
     $('#opeka-app').html(Opeka.appViewInstance.render().el);
 
-    $('#help .region-help').hide();
+    // Handle disconnects.
     // If the connection is dropped, advise the user that he has to
     // reload the page.
-
+    
     now.core.on('disconnect', function() {
 
       // If the user is banned, tell him to go away.
@@ -573,5 +573,12 @@ var Opeka = { status: {}},
     }
 
     Backbone.history.start();
+  });
+
+  // The now object is ready.
+  now.ready(function() {
+    now.getFeatures(function(features) {
+      Opeka.features = features;
+    });
   });
 }(jQuery));

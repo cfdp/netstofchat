@@ -40,8 +40,8 @@
   </div>
   <% if (admin) { %>
     <div class="sidebar-block">
-      <h5 class="sidebar-block-heading">Room actions<span class="arrow down"></span></h5>
-      <div class="sidebar-block-content room-actions"  style="display: none;">
+      <h5 class="sidebar-block-heading">Room actions<span class="arrow up"></span></h5>
+      <div class="sidebar-block-content room-actions">
         <button class="pause-toggle"><%= labels.pauseToggle %></button>
         <button class="clear-messages"><%= labels.clearMessages %></button>
         <button class="delete-room"><%= labels.deleteRoom %></button>
@@ -75,7 +75,7 @@
 
 <script id="opeka_connect_form_tmpl" type="application/template">
   <form action="#" class="connect-interface">
-    <p class="welcome-message"><%= labels.welcome_message %></p>
+    <div class="branding-container"><span class="cyberhus-logo"></span></div>
     <fieldset>
       <label class="form-item nickname-label">
         <%= labels.nick %>
@@ -104,7 +104,6 @@
       <% } %>
 
       <input class="connect form-submit btn" type="submit" value="<%= labels.action %>" />
-      <span class="cyberhus-logo"></span>
     </fieldset>
   </form>
 </script>
@@ -127,12 +126,11 @@
             <span class="room-status">FULL</span>
           <%} %>
         </div>
-      <p class="room-description"><%- room.get('name') %></p>
-      <% if (room.get('memberCount') != room.get('maxSize')){%>
+      <p class="room-description"><%- room.get('name') %></p><% if (room.get('memberCount') != room.get('maxSize')){%>
         <a href="#rooms/<%= room.id %>" class="room-enter"><%= labels.enterRoom %></a>
       <%}else{ %>
         <a href="<%= labels.fullRoomLinkText %>" target="_blank" class="meantime"><%= labels.fullRoomLink %></a>
-      <%}%>  
+      <%}%>
       </li>
     <% } %>
   <% }); %>
@@ -188,7 +186,6 @@
 </script>
 
 <script id="opeka_chat_tmpl" type="application/template">
-<div class="chat-message-list-wrapper">
   <ul class="chat-message-list">
   <% _.each(messages, function (message) { %>
     <% if (message.system) { %>
@@ -217,7 +214,6 @@
     <% } %>
   <% }); %>
   </ul>
-  </div>
 </script>
 
 <script id="opeka_chat_form_tmpl" type="application/template">
@@ -230,14 +226,14 @@
     <input class="form-submit send" type="submit" value="<%= labels.messageButton %>" />
   </form>
   <% } else if (activeUser.muted) { %>
-    <div class="userMuted">
+      <div class="userMuted">
       <p><%= labels.userMuted %></p>
       <span class="help-text">When you are muted, you are not alllowed to send any messages until the counselor decides to unmute you. You can see all the other messages and receive whispers.</span>
     </div>
   <% } else if (inQueue === false) { %>
     <div class="roomPaused">
       <p><%= labels.roomPaused %></p>
-      <span class="help-text">The room has been paused by the counselor.</span>
+      <span class="help-text"><%= labels.roomPausedHelpText %></span>
     </div>
   <% } %>
   <% if (inQueue !== false) { %>
