@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
 <title>External Customer Site</title>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -55,7 +55,7 @@ function open_window(window_name,file_name,width,height) {
         
         pairButton.hide();
         brevkasser.show();
-        statusInfo.show().text("Chatten er optaget. Du kan klikke forbi brevkasserne og stile dit spørgsmål der eller se om der allerede ligger et svar du kan bruge.");
+        statusInfo.show().html("Chatten er optaget. Du kan klikke forbi brevkasserne og stile dit sp&oslash;rgsm&aring;l der eller se om der allerede ligger et svar du kan bruge.");
 
         $('.read-more').css("margin","0");
 
@@ -66,7 +66,7 @@ function open_window(window_name,file_name,width,height) {
           brevkasser.show();
           statusInfo.show();
 
-          statusInfo.text("Chatten er lukket. Du kan klikke forbi brevkasserne og stile dit spørgsmål der eller se om der allerede ligger et svar du kan bruge.");
+          statusInfo.html("Chatten er lukket. Du kan klikke forbi brevkasserne og stile dit sp&oslash;rgsm&aring;l der eller se om der allerede ligger et svar du kan bruge.");
         $('.read-more').css("margin","0");
       };
 
@@ -107,13 +107,13 @@ function open_window(window_name,file_name,width,height) {
   
   .btn {background: #0B5A7C; border-radius: 5px; border-width: 0; color: #FFF; display: inline-block; font-family: 'Cabin'; font-size: 15px; font-weight: bold; margin: 25px auto; padding: 10px 15px; text-decoration: none;}
   .btn:hover{cursor: pointer; text-decoration: underline;}
-  .btn.brevkasser{margin-left: 25px;}
+  .btn.brevkasser{margin: 10px 0 0 25px;}
   .btn.pairchat{display: none; margin-left: 33px; margin-top: 50px;}
   .status-content{float: right; padding: 0 8px; width: 158px;}
   
   .status-tab{background:url("http://netstofchat.cybhus.dk/sites/default/files/chat-close.png") no-repeat; display: inline-block; height: 162px; width: 41px;}
 
-  .status-info{font-family: 'Cabin', sans-serif; font-size: 11px;}
+  .status-info{font-family: 'Cabin', sans-serif; font-size: 11px; margin: 8px 0 4px;}
   
   .read-more {display: inline-block; margin: 10px 0 0; text-align: center; width: 100%;}
   .read-more a{color: #0B5A7C; font-family: 'Cabin'; font-size: 12px; text-decoration: none;}
