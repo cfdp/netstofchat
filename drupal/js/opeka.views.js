@@ -1101,7 +1101,9 @@
     render: function () {
       this.$el.html(JST.opeka_user_feedback_tmpl({
         
-        admin: _.isFunction(now.isAdmin),
+        labels: {
+          feedbackMessage: Drupal.t('Thank you very much!')
+        }
                 
       }));
       

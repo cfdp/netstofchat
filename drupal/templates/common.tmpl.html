@@ -253,11 +253,5 @@
 </script>
 
 <script id="opeka_user_feedback_tmpl" type="application/template">
-
-  <% if(admin) { %>
-    <p>Thank you!</p>
-  <% }else{ %>
-    <iframe height="2800" frameborder="0" width="618" onLoad="window.scrollTo(0,0);" src="https://docs.google.com/a/cyberhus.dk/spreadsheet/embeddedform?formkey=dFBPMklBOU5RZEFuVktUVTlRNmNtYnc6MQ" marginwidth="0" marginheight="0">Indlæser ...</iframe>
-  <% } %>
-
+  <p><%= labels.feedbackMessage %></p>
 </script>
