@@ -1,4 +1,5 @@
 *.log
+
 /modules/contrib
 /nodejs/.monitor
 /nodejs/config.json
@@ -6,4 +7,3 @@
 /nodejs/certs
 /nodejs/certs/*
 /drupal/img/*
-
