@@ -978,10 +978,10 @@
       });
       options.dialogOptions = {
         buttons: {},
-        title: Drupal.t('Comfirm: leave room'),
+        title: Drupal.t('Confirm: Leave chat room'),
         width: 400
       };
-      options.dialogOptions.buttons[Drupal.t('Leave room')] = this.leaveRoom;
+      options.dialogOptions.buttons[Drupal.t('Leave chat room')] = this.leaveRoom;
       options.dialogOptions.buttons[Drupal.t('Cancel')] = this.cancel;
 
       // Call the parent initialize once we're done customising.

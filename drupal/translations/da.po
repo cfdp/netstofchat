@@ -150,8 +150,16 @@ msgid "Leave queue"
 msgstr "Forlad køen"
 
 #: js/opeka.views.js:0
+msgid "Confirm: Leave chat room"
+msgstr "Bekræft: Forlad chat room"
+
+#: js/opeka.views.js:0
 msgid "Leave chat room"
 msgstr "Forlad chatten"
+
+#: js/opeka.views.js:0
+msgid "You are about to leave a pair room that you created - are you sure you want to do this?"
+msgstr "Du er ved at forlade et par rum, som du har oprettet - er du sikker på du vil gøre dette?"
 
 #: js/opeka.views.js:0
 msgid "Type message here…"
