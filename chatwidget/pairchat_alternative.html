@@ -46,14 +46,42 @@ $(document).ready(function() {
   document.body.appendChild(now_script);
 });
 </script>
+<style>
+  .status-wrapper {
+    width: 100%;
+    color: #3e3e3e;
+    background: #efefef;
+    padding: 1em;
+  }
+
+  .status-info {
+    font-size: 14px;
+  }
+  .status-tab {
+    display:none; height: 0; width: 0;
+  }
+  .status-content {
+    width: 96%;
+    float:none;
+    padding: 0;
+  }
+  .read-more {
+    display: none;
+  }
+
+  .btn.brevkasser {
+    margin: 10px 0 0;
+  }
+
+</style>
 
 </head>
 <body>
   <div class="status-wrapper">
-    <div class="status-tab"></div>
+    <div class="status-tab" ></div>
     <div class="status-content">
       <a id="join-pair-chat" class="btn pairchat">Chat nu</a>
-      <p class="status-info">Chatten er &aring;ben onsdag kl. 10-13 & igen 18-21. Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l der, eller se om der ligger et svar du kan bruge.</p>
+      <p class="status-info">Chatten er lukket, men du er velkommen i ovenst&aring;ende &aring;bningstid. <br>Alternativt kig forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l der, eller se om der ligger et svar du kan bruge.</p>
       <p class="read-more"><a href="http://netstof.dk/chat" target="_parent">L&aelig;s mere om chatten</a></p>
       <a href="http://netstof.dk/brevkasser" target="_parent" class="btn brevkasser">Brevkasser</a>
     </div>
