@@ -6,7 +6,7 @@
 }
 
 .btn {
-  background: #0B5A7C;
+  background: #efefef;
   border-radius: 5px;
   border-width: 0;
   color: #FFF; display:
@@ -14,7 +14,7 @@
   font-family: 'Cabin', sans-serif;
   font-size: 15px;
   font-weight: bold;
-  margin: 25px auto;
+  margin: 20px 0 0;
   padding: 10px 15px;
   text-decoration: none;
 }
@@ -45,22 +45,4 @@
   font-family: 'Cabin', sans-serif;
   font-size: 13px;
   margin: 8px 0 4px;
-}
-
-.read-more {
-  display: inline-block;
-  margin: 10px 0 0;
-  text-align: center;
-  width: 100%;
-}
-
-.read-more a {
-  color: #0B5A7C;
-  font-family: 'Cabin', sans-serif;
-  font-size: 13px;
-  text-decoration: none;
-}
-
-.read-more a:hover {
-  text-decoration: underline;
 }
