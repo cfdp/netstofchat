@@ -36,17 +36,14 @@
         brevkasser.show();
         statusInfo.show().html("Chatten er optaget. Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l dér, eller se om der ligger et svar du kan bruge.");
 
-        $('.read-more').css("margin","0");
-
       } else {
         statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/default/files/chat-busy-horizontal.png') no-repeat");
 
-          pairButton.hide();
-          brevkasser.show();
-          statusInfo.show();
+        pairButton.hide();
+        brevkasser.show();
+        statusInfo.show();
 
-          statusInfo.html("Chatten er &aring;ben onsdag kl. 10-13 & igen 18-21. Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l der, eller se om der ligger et svar du kan bruge.");
-        $('.read-more').css("margin","0");
+        statusInfo.html("Chatten er &aring;ben <strong>onsdag kl. 10-13 & igen 18-21.</strong> Klik forbi brevkasserne og stil dit sp&oslash;rgsm&aring;l der, eller se om der ligger et svar du kan bruge.");
       };
 
      };

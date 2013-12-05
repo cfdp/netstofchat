@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin);
 
 .status-wrapper {
-  background: #FFF;
+  background: #ffebce;
   width: 100%;
 }
 
@@ -31,14 +31,14 @@
   display: none;
 }
 .status-content {
-
+  padding: 10px;
 }
 
 .status-tab {
-  background:url("http://netstofchat.cybhus.dk/sites/default/files/chat-close-horizontal.png") no-repeat;
+  background:url("http://netstofchat.cybhus.dk/sites/default/files/chat-close-horizontal.png") no-repeat #fe6421;
   display: block;
-  height: 162px;
-  width: 41px;
+  height: 41px;
+  width: 100%;
 }
 
 .status-info {
