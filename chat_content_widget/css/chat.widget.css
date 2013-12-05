@@ -1,7 +1,7 @@
-/*@import url(http://fonts.googleapis.com/css?family=Cabin);
+@import url(http://fonts.googleapis.com/css?family=Cabin);
 .status-wrapper {
   background: #FFF;
-  width: 220px;
+  width: 100%;
 }
 .btn {
   background: #0B5A7C;
@@ -54,4 +54,3 @@
   text-decoration: none;
 }
 .read-more a:hover{text-decoration: underline;}
-*/
