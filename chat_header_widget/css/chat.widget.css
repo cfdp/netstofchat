@@ -28,7 +28,7 @@
 }
 
 .btn.pairchat {
-  display: none;
+  display: block;
 }
 .status-content {
   padding: 10px;

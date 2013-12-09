@@ -17,14 +17,11 @@
     // Updates the actual status text.
     var updateDisplay = function (attributes) {
       // If there are any active one-to-one rooms.
-      if (0 == 0) {
-      //if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {
-        alert("Ir rcok");
+      if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {
         pairButton.css("display","inline-block");
 
       // If not, check if there are any active group rooms.
-      } else if (0 == 1) {
-      //} else if (chatStatus.rooms && chatStatus.rooms.pair.full > 0) {
+      } else if (chatStatus.rooms && chatStatus.rooms.pair.full > 0) {
         pairButton.hide();
 
       } else {
