@@ -17,8 +17,9 @@
     // Updates the actual status text.
     var updateDisplay = function (attributes) {
       // If there are any active one-to-one rooms.
-      if (chatStatus.rooms && chatStatus.rooms.pair.active > 0 || true == true) {
-
+      if (0 == 0) {
+      //if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {
+        alert("Ir rcok");
         pairButton.css("display","inline-block");
 
       // If not, check if there are any active group rooms.
