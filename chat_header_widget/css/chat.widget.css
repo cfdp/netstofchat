@@ -6,6 +6,10 @@ body,
 
 .btn.pairchat {
   display: block;
-  width: 120px; height: 86px;
-  background: url(http://netstofchat.cybhus.dk/sites/default/files/chat-open-header.png) #f00;
+  width: 210px; height: 86px;
+  background: url(http://netstofchat.cybhus.dk/sites/default/files/chat-open-header.png);
+  /*Hide text*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
