@@ -1,6 +1,7 @@
 body,
 .status-wrapper {
   background: none;
+  background-color: transparent;
   width: 100%;
 }
 
