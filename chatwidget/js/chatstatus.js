@@ -22,7 +22,7 @@
       // If there are any active one-to-one rooms.
       if (chatStatus.rooms && chatStatus.rooms.pair.active > 0) {
 
-        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/default/files/chat-open.png') no-repeat");
+        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/all/themes/netstofchat/img/chat-open.png') no-repeat");
 
         pairButton.css("display","inline-block");
         statusInfo.hide();
@@ -30,7 +30,7 @@
 
       // If not, check if there are any active group rooms.
       } else if (chatStatus.rooms && chatStatus.rooms.pair.full > 0) {
-        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/default/files/chat-busy.png') no-repeat");
+        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/all/themes/netstofchat/img/chat-busy.png') no-repeat");
 
         pairButton.hide();
         brevkasser.show();
@@ -39,7 +39,7 @@
         $('.read-more').css("margin","0");
 
       } else {
-        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/default/files/chat-busy.png') no-repeat");
+        statusTab.css("background","url('http://netstofchat.cybhus.dk/sites/all/themes/netstofchat/img/chat-busy.png') no-repeat");
 
           pairButton.hide();
           brevkasser.show();
